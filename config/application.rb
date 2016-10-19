@@ -30,6 +30,7 @@ module Board
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins 'localhost:8080'
+        resource 'tasks', headers: :any, methods: [:get, :post, :delete]
       end
     end
   end
