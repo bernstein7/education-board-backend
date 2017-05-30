@@ -11,7 +11,7 @@ default: &default
 
 development:
   <<: *default
-  username: bernstein
+  username: postgres
   host: localhost
   database: development_board
   password:
